@@ -27,7 +27,7 @@ const infoData = [
   },
   {
     icon: <GraduationCap />,
-    text: "Universitatea Nationala de Arte Bucuresti",
+    text: "UNArte",
   },
 ];
 

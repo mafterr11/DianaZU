@@ -40,7 +40,7 @@ function HeroSection() {
       </div>
       <div className="flex flex-col items-center gap-y-[35px]">
         <div className="relative">
-          <Image width={500} height={500} priority src="/hero.jpg" alt="hero image" />
+          <Image width={500} height={500} priority src="/hero.jpg" alt="hero image" className="rounded-[10%]" />
         </div>
         <Socials />
       </div>
