@@ -4,6 +4,7 @@ import React from "react";
 import MainButton from "../common/MainButton";
 import Socials from "../common/Socials";
 import { Link } from "react-scroll";
+import Image from "next/image";
 function HeroSection() {
   return (
     <section id="acasa" className="container flex flex-col items-center justify-between gap-16 xl:flex-row">
@@ -39,7 +40,7 @@ function HeroSection() {
       </div>
       <div className="flex flex-col items-center gap-y-[35px]">
         <div className="relative">
-          <img src="/hero.png" alt="hero image" />
+          <Image width={500} height={500} priority src="/hero.jpg" alt="hero image" />
         </div>
         <Socials />
       </div>

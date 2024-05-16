@@ -27,7 +27,15 @@ function MyProjectsSection() {
         title: "Ilustratii ",
       },
       {
-        imageUrl: "/work/ilustratii/6.png",
+        imageUrl: "/work/ilustratii/6.jpg",
+        title: "Ilustratii ",
+      },
+      {
+        imageUrl: "/work/ilustratii/7.jpg",
+        title: "Ilustratii ",
+      },
+      {
+        imageUrl: "/work/ilustratii/8.jpg",
         title: "Ilustratii ",
       },
       {
@@ -58,7 +66,15 @@ function MyProjectsSection() {
         title: "Ilustratii ",
       },
       {
-        imageUrl: "/work/ilustratii/6.png",
+        imageUrl: "/work/ilustratii/6.jpg",
+        title: "Ilustratii ",
+      },
+      {
+        imageUrl: "/work/ilustratii/7.jpg",
+        title: "Ilustratii ",
+      },
+      {
+        imageUrl: "/work/ilustratii/8.jpg",
         title: "Ilustratii ",
       },
     ],
