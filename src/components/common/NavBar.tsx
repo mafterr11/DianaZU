@@ -44,9 +44,9 @@ function NavBar() {
   ];
 
   return (
-    <div className="z-20 border-b   border-gray-300 md:sticky md:top-0 md:shadow-none">
+    <div className="z-20 border-b border-gray-300 md:sticky md:top-0 md:shadow-none">
       {/* DESKTOP */}
-      <div className=" hidden bg-white p-4 animate-in fade-in zoom-in lg:block">
+      <div className=" hidden bg-white p-4 animate-in fade-in zoom-in lg:block transition-all duration-300 ease-in">
         <div className="mx-[41px] flex items-center justify-between">
           <Link
             to="acasa"
