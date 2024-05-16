@@ -15,11 +15,11 @@ const infoData = [
   },
   {
     icon: <PhoneCall />,
-    text: "+40.724.411.148",
+    text: "+40724411148",
   },
   {
     icon: <MailIcon />,
-    text: "mafteidiana39@gmail.com",
+    text: "diana.maftei.art@gmail.com",
   },
   {
     icon: <Calendar />,
