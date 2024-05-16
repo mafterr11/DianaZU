@@ -85,7 +85,7 @@ function MyProjectsSection() {
       />
 
       <Tabs defaultValue="toate" className="my-8 w-full">
-        <TabsList className="mb-[18rem] xl:mb-16 grid container grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4">
+        <TabsList className="mb-[18rem] md:mb-[10rem] xl:mb-16 grid container grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 max-lg:w-[80%]">
           <TabsTrigger value="toate">Toate</TabsTrigger>
           <TabsTrigger value="ilustratii">
             Ilustratii
