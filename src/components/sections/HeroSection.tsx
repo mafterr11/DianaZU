@@ -40,7 +40,7 @@ function HeroSection() {
       </div>
       <div className="flex flex-col items-center gap-y-[35px]">
         <div className="relative">
-          <Image width={500} height={500} priority src="/hero.jpg" alt="hero image" className="rounded-[10%]" />
+          <Image width={500} height={500} priority src="/hero.jpg" alt="hero image" className="rounded-[10%] transition-all duration-500 ease-in-out hover:scale-[1.05] hover:rotate-3" />
         </div>
         <Socials />
       </div>

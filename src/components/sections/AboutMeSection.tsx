@@ -12,9 +12,9 @@ function ProgressBar({ title, percent }: { title: string; percent: number }) {
 
 function AboutMeSection() {
   return (
-    <section id="despre" className="my-12 flex flex-col items-center justify-between gap-8 xl:flex-row">
-      <div className="xl:w-[40%]">
-        <img src="/about.png" alt="profile" className="rounded-[10%]"/>
+    <section id="despre" className="my-12 flex flex-col items-center justify-evenly gap-8 xl:flex-row">
+      <div className="xl:w-[35%]">
+        <img src="/about.png" alt="profile" className="rounded-[10%] transition-all duration-500 ease-in-out hover:scale-[1.05] hover:rotate-3"/>
       </div>
       <div className="xl:w-[50%] text-center md:text-left">
         <p className="text-2xl font-bold leading-[3.5rem] md:text-[65px]">

@@ -9,7 +9,7 @@ interface IProps {
 
 function ProjectCard({ imageUrl, title, description }: IProps) {
   return (
-    <div className="rounded-[14px] px-[5px]">
+    <div className="rounded-[14px] px-[5px] transition-all duration-500 ease-in-out hover:-translate-y-2">
       <div className="bg-[#FFEBDB] px-[27px] py-4">
         <Image width={800} height={800} src={imageUrl} alt="service icon" />
       </div>
