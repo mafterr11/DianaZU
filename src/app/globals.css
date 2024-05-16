@@ -21,7 +21,7 @@
     @apply text-6xl font-bold tracking-[-2px] xl:text-[65px] xl:leading-[80px];
   }
   h2 {
-    @apply text-4xl font-bold;
+    @apply text-xl xl:text-4xl font-bold;
   }
   h3 {
     @apply text-3xl font-bold;

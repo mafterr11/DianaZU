@@ -71,7 +71,7 @@ function MyProjectsSection() {
 
     graficdesign: [
       {
-        imageUrl: "",
+        imageUrl: "/work/background/1.jpg",
         title: "Design grafic",
         description: "SOON",
       },
@@ -85,42 +85,42 @@ function MyProjectsSection() {
       />
 
       <Tabs defaultValue="toate" className="my-8 w-full">
-        <TabsList className="mb-16 grid container grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4">
+        <TabsList className="mb-[18rem] xl:mb-16 grid container grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4">
           <TabsTrigger value="toate">Toate</TabsTrigger>
-          <TabsTrigger value="ilustratii" className="hidden lg:block">
+          <TabsTrigger value="ilustratii">
             Ilustratii
           </TabsTrigger>
-          <TabsTrigger value="background" className="hidden lg:block">
+          <TabsTrigger value="background">
             Background
           </TabsTrigger>
-          <TabsTrigger value="graficdesign" className="hidden lg:block">
+          <TabsTrigger value="graficdesign">
             Design grafic
           </TabsTrigger>
         </TabsList>
 
         <TabsContent value="toate">
-          <div className="grid grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 xl:grid-cols-4 gap-6">
             {data.toate.map((project, index) => (
               <ProjectCard {...project} key={index} />
             ))}
           </div>
         </TabsContent>
         <TabsContent value="ilustratii">
-          <div className="grid grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 xl:grid-cols-4 gap-6">
             {data.ilustratii.map((project, index) => (
               <ProjectCard {...project} key={index} />
             ))}
           </div>
         </TabsContent>
         <TabsContent value="background">
-          <div className="grid grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 xl:grid-cols-4 gap-6">
             {data.background.map((project, index) => (
               <ProjectCard {...project} key={index} />
             ))}
           </div>
         </TabsContent>
         <TabsContent value="graficdesign">
-          <div className="grid grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 xl:grid-cols-4 gap-6">
             {data.graficdesign.map((project, index) => (
               <ProjectCard {...project} key={index} />
             ))}

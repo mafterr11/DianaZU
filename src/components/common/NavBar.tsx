@@ -15,26 +15,31 @@ function NavBar() {
       name: "Acasa",
       link: "acasa",
       offset: -130,
+      mobileOffset: -100,
     },
     {
       name: "Despre mine",
       link: "despre",
       offset: -130,
+      mobileOffset: -100,
     },
     {
       name: "Servicii",
       link: "servicii",
       offset: -130,
+      mobileOffset: -100,
     },
     {
       name: "Proiecte",
       link: "proiecte",
       offset: -130,
+      mobileOffset: -100,
     },
     {
       name: "Contact",
       link: "contact",
       offset: 0,
+      mobileOffset: -100,
     },
   ];
 
@@ -73,9 +78,9 @@ function NavBar() {
         } `}
       >
         <div className="mx-[10px] flex justify-between">
-          <div className="flex select-none items-center gap-[50px] text-[16px]">
-            <img src="/images/logo.png" alt="logo" className="w-[7rem]" />
-          </div>
+          <h2>
+            DIANA<span className=" align-super text-primary">ZU</span>
+          </h2>
           <div className="flex items-center gap-[40px]">
             {menu ? (
               <X
@@ -92,36 +97,21 @@ function NavBar() {
         </div>
         {menu ? (
           <div className="my-8 select-none animate-in slide-in-from-right">
-            <div className="mx-4 mt-8 flex flex-col gap-8">
-              <p
-                className={`text-gray flex cursor-pointer items-center gap-2  font-[500] hover:text-primary`}
-              >
-                Home
-              </p>
-              <p
-                className={`text-gray flex cursor-pointer items-center gap-2  font-[500] hover:text-primary`}
-              >
-                About Me
-              </p>
-              <p
-                className={`text-gray flex cursor-pointer items-center gap-2  font-[500] hover:text-primary`}
-              >
-                Services
-              </p>
-              <p
-                className={`text-gray flex cursor-pointer items-center gap-2  font-[500] hover:text-primary`}
-              >
-                Projects
-              </p>
-              <p
-                className={`text-gray flex cursor-pointer items-center gap-2  font-[500] hover:text-primary`}
-              >
-                Contact
-              </p>
-
-              <div className="flex select-none flex-col gap-[40px]">
-                <MainButton text="Download CV" classes="w-[188px]" />
-              </div>
+            <div className="flex flex-col select-none items-center gap-[20px] text-[16px] xl:gap-[50px]">
+              {links.map((link, index) => (
+                <Link
+                  key={index}
+                  to={link.link}
+                  spy={true}
+                  smooth={true}
+                  offset={link.mobileOffset}
+                  duration={500}
+                  className={`text-gray flex cursor-pointer items-center gap-2  font-[500] hover:text-primary`}
+                  onClick={toggleMenu}
+                >
+                  {link.name}
+                </Link>
+              ))}
             </div>
           </div>
         ) : (

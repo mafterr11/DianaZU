@@ -16,8 +16,10 @@ function ServiceCard({
       <div>
         <img src={iconUrl} alt="service icon" />
       </div>
-      <p className="my-4 text-[32px] font-semibold">{title}</p>
-      <p>{description}</p>
+      <div>
+        <p className="my-4 text-[32px] font-semibold">{title}</p>
+        <p>{description}</p>
+      </div>
     </div>
   );
 }
