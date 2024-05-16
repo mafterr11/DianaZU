@@ -48,10 +48,18 @@ function NavBar() {
       {/* DESKTOP */}
       <div className=" hidden bg-white p-4 animate-in fade-in zoom-in lg:block">
         <div className="mx-[41px] flex items-center justify-between">
-          <h2>
-            DIANA<span className=" align-super text-primary">ZU</span>
-          </h2>
-          <div className="flex select-none items-center gap-[20px] text-[16px] xl:gap-[50px]">
+          <Link
+            to="acasa"
+            spy={true}
+            smooth={true}
+            offset={-130}
+            duration={500}
+          >
+            <h2>
+              DIANA<span className=" align-super text-primary">ZU</span>
+            </h2>
+          </Link>
+          <div className="flex select-none items-center gap-[20px] text-[18px] xl:gap-[50px]">
             {links.map((link, index) => (
               <Link
                 key={index}
@@ -60,27 +68,42 @@ function NavBar() {
                 smooth={true}
                 offset={link.offset}
                 duration={500}
-                className={`text-gray flex cursor-pointer items-center gap-2  font-[500] hover:text-primary`}
+                className={`text-gray flex cursor-pointer items-center gap-2  font-[500] transition-all duration-500 ease-in-out hover:scale-[1.07] hover:text-primary`}
               >
                 {link.name}
               </Link>
             ))}
           </div>
-          <div className="flex select-none items-center gap-[40px]">
-            <MainButton text="Download CV" classes="w-[188px]" />
-          </div>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-130}
+            duration={500}
+            className="flex select-none items-center gap-[40px]"
+          >
+            <MainButton text="Angajează-mă" classes="w-[188px]" />
+          </Link>
         </div>
       </div>
       {/* MOBILE */}
       <div
-        className={` fixed top-0 z-[999]  block w-full bg-white py-4 shadow-sm animate-in fade-in zoom-in lg:hidden  ${
-          menu ? " bg-primary py-2" : ""
+        className={` fixed top-0 z-[999]  block w-full bg-white p-4 shadow-sm animate-in fade-in zoom-in lg:hidden  ${
+          menu ? " bg-primary py-4" : ""
         } `}
       >
         <div className="mx-[10px] flex justify-between">
-          <h2>
-            DIANA<span className=" align-super text-primary">ZU</span>
-          </h2>
+          <Link
+            to="acasa"
+            spy={true}
+            smooth={true}
+            offset={-130}
+            duration={500}
+          >
+            <h2>
+              DIANA<span className=" align-super text-primary">ZU</span>
+            </h2>
+          </Link>
           <div className="flex items-center gap-[40px]">
             {menu ? (
               <X
@@ -97,7 +120,7 @@ function NavBar() {
         </div>
         {menu ? (
           <div className="my-8 select-none animate-in slide-in-from-right">
-            <div className="flex flex-col select-none items-center gap-[20px] text-[16px] xl:gap-[50px]">
+            <div className="flex select-none flex-col items-center gap-[20px] text-[16px] xl:gap-[50px]">
               {links.map((link, index) => (
                 <Link
                   key={index}

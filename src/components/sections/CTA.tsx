@@ -10,23 +10,23 @@ import {
 
 const infoData = [
   {
-    icon: <User2 size={20} />,
+    icon: <User2 />,
     text: "Diana Maftei",
   },
   {
-    icon: <PhoneCall size={20} />,
+    icon: <PhoneCall />,
     text: "+40.724.411.148",
   },
   {
-    icon: <MailIcon size={20} />,
+    icon: <MailIcon />,
     text: "mafteidiana39@gmail.com",
   },
   {
-    icon: <Calendar size={20} />,
+    icon: <Calendar />,
     text: "03 Sep, 1997",
   },
   {
-    icon: <GraduationCap size={20} />,
+    icon: <GraduationCap />,
     text: "Universitatea Nationala de Arte Bucuresti",
   },
 ];
@@ -34,7 +34,7 @@ const infoData = [
 function NewsletterSection() {
   return (
     <section id="contact" className="my-20">
-      <div className="flex flex-col xl:flex-row items-start md:items-center justify-evenly gap-y-12">
+      <div className="flex flex-col xl:flex-row xl:items-start items-center justify-evenly gap-y-12">
         <div className="max-w-xl text-center xl:text-left">
           <p className="mb-10  text-2xl font-semibold leading-snug md:text-[55px]">
             Hai să proiectăm împreună
@@ -51,7 +51,7 @@ function NewsletterSection() {
                 className="mx-auto flex items-center gap-x-4 xl:mx-0"
                 key={index}
               >
-                <div className="text-accent">{item.icon}</div>
+                <div className="text-accent text-primary">{item.icon}</div>
                 <p className="text-center xl:text-left">{item.text}</p>
               </div>
             );

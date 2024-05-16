@@ -27,13 +27,13 @@ function HeroSection() {
         </p>
         <div>
           <Link
-            to="contact"
+            to="proiecte"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-130}
             duration={500}
           >
-          <MainButton text="Angajează-mă" />
+          <MainButton text="Portofoliul meu" />
           </Link>
         </div>
       </div>
