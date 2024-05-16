@@ -36,7 +36,7 @@ function NewsletterSection() {
     <section id="contact" className="my-20">
       <div className="flex flex-col xl:flex-row xl:items-start items-center justify-evenly gap-y-12">
         <div className="max-w-xl text-center xl:text-left">
-          <p className="mb-10  text-2xl font-semibold leading-snug md:text-[55px]">
+          <p className="mb-10  text-2xl font-semibold leading-snug md:text-[55px] underline underline-offset-[10px] decoration-wavy decoration-primary">
             Hai să proiectăm împreună
           </p>
           <p className="text-[21px]">
