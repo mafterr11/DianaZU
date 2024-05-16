@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  body {
+    @apply overflow-x-hidden tracking-[0.5px] text-black;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-bold leading-3;
+  }
+
+  h1 {
+    @apply text-6xl font-bold tracking-[-2px] xl:text-[65px] xl:leading-[80px];
+  }
+  h2 {
+    @apply text-4xl font-bold;
+  }
+  h3 {
+    @apply text-3xl font-bold;
+  }
+  h4 {
+    @apply text-[22px] font-semibold;
+  }
+  p {
+    @apply leading-8 text-black/80 xl:text-[18px];
+  }
+  a {
+    @apply cursor-pointer transition-all duration-300;
+  }
+  label {
+    @apply mb-2 block font-normal text-black;
+  }
+
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: #fd6f00;
+  transform-origin: 0%;
+  z-index: 99999999999999;
+}
