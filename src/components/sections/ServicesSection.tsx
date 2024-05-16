@@ -21,7 +21,7 @@ function ServicesSection() {
     },
   ];
   return (
-    <section className="my-12">
+    <section id="servicii" className="my-12">
       <Header title="Services" description="Creez ilustrații și fundaluri unice, cu design grafic avansat disponibil în curând."/>
 
       <div className="mt-[59px] grid grid-cols-1 gap-[31px] md:grid-cols-2 lg:grid-cols-3 container">

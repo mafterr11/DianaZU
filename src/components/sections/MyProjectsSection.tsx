@@ -78,7 +78,7 @@ function MyProjectsSection() {
     ],
   };
   return (
-    <section>
+    <section id="proiecte">
       <Header
         title="Proiectele mele"
         description="Explorați colecția mea de lucrări recente și proiecte creative."

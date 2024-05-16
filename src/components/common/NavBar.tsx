@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { MenuIcon, X } from "lucide-react";
 import MainButton from "./MainButton";
-import Link from "next/link";
+import { Link } from "react-scroll";
 
 function NavBar() {
   const [menu, setMenu] = useState(false);
@@ -13,34 +13,48 @@ function NavBar() {
   const links = [
     {
       name: "Acasa",
+      link: "acasa",
+      offset: -130,
     },
     {
       name: "Despre mine",
+      link: "despre",
+      offset: -130,
     },
     {
       name: "Servicii",
+      link: "servicii",
+      offset: -130,
     },
     {
       name: "Proiecte",
+      link: "proiecte",
+      offset: -130,
     },
     {
       name: "Contact",
+      link: "contact",
+      offset: 0,
     },
   ];
 
   return (
-    <div className="z-20 md:sticky   md:top-0 md:shadow-none border-b border-gray-300">
+    <div className="z-20 border-b   border-gray-300 md:sticky md:top-0 md:shadow-none">
       {/* DESKTOP */}
       <div className=" hidden bg-white p-4 animate-in fade-in zoom-in lg:block">
         <div className="mx-[41px] flex items-center justify-between">
-            <h2>
-              DIANA<span className=" align-super text-primary">ZU</span>
-            </h2>
+          <h2>
+            DIANA<span className=" align-super text-primary">ZU</span>
+          </h2>
           <div className="flex select-none items-center gap-[20px] text-[16px] xl:gap-[50px]">
             {links.map((link, index) => (
               <Link
-                href="/"
                 key={index}
+                to={link.link}
+                spy={true}
+                smooth={true}
+                offset={link.offset}
+                duration={500}
                 className={`text-gray flex cursor-pointer items-center gap-2  font-[500] hover:text-primary`}
               >
                 {link.name}

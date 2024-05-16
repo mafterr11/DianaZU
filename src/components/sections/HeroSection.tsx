@@ -3,9 +3,10 @@
 import React from "react";
 import MainButton from "../common/MainButton";
 import Socials from "../common/Socials";
+import { Link } from "react-scroll";
 function HeroSection() {
   return (
-    <section className="container flex flex-col items-center justify-between gap-16 md:flex-row">
+    <section id="acasa" className="container flex flex-col items-center justify-between gap-16 md:flex-row">
       <div className="">
         <h3 className="text-[24px] font-semibold">Buna, eu sunt</h3>
         <h3 className="text-[34px] font-semibold text-primary">
@@ -25,7 +26,15 @@ function HeroSection() {
           creații vizuale remarcabile.
         </p>
         <div>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
           <MainButton text="Angajează-mă" />
+          </Link>
         </div>
       </div>
       <div className="flex flex-col items-center gap-y-[35px]">

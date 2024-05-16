@@ -12,7 +12,7 @@ function ProgressBar({ title, percent }: { title: string; percent: number }) {
 
 function AboutMeSection() {
   return (
-    <section className="my-12 flex flex-col items-center justify-between gap-8 md:flex-row">
+    <section id="despre" className="my-12 flex flex-col items-center justify-between gap-8 md:flex-row">
       <div className="md:w-[40%]">
         <img src="/about.png" alt="profile" className="rounded-[10%]"/>
       </div>

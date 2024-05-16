@@ -4,7 +4,7 @@ import MainButton from "../common/MainButton";
 
 function NewsletterSection() {
   return (
-    <section className="my-20">
+    <section id="contact" className="my-20">
       <div className="flex flex-col items-center justify-center gap-y-6">
         <Header
           title="Hai să proiectăm împreună"
