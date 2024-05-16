@@ -8,9 +8,9 @@ export function cn(...inputs: ClassValue[]) {
 
 export function constructMetadata({
   title = "DianaZU - Designer Freelance",
-  description = "Alege Myriad Tech pentru servicii personalizate de web development, transformând viziunea afacerii tale în realitate prin soluții digitale inovatoare.",
-  keywords = "dezvoltare web, design web personalizat, dezvoltator web freelancer, site-uri responsive, solutii e-commerce, Myriad Tech, design web, freelancer, bucuresti, romania, afacere mica, maftei alexandru, preturi site, super pret",
-  image = "/logo.png",
+  description = "Alege Diana pentru servicii personalizate de ilustrare, artă de fundal și design grafic, transformând ideile tale în realitate prin creații vizuale captivante și inovatoare.",
+  keywords = "ilustrație, artă de fundal, design grafic personalizat, artist vizual freelancer, fundaluri creative, soluții grafice, Diana, ilustrații, freelancer, București, România, artă vizuală, prețuri accesibile, proiecte grafice, calitate superioară",
+  image = "/logo.webp",
   icons = "/icon.svg",
 }: {
   title?: string;
@@ -32,7 +32,7 @@ export function constructMetadata({
     twitter: {
       card: "summary_large_image",
       title,
-      site: "https://myriad-tech.ro",
+      site: "https://dianazu.vercel.app",
       description,
       images: [image],
       creator: "@dianazu",
