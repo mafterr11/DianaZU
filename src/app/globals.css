@@ -11,7 +11,7 @@
     @apply overflow-x-hidden tracking-[0.5px] text-black;
   }
 
-  h1, 
+  h1,
   h2,
   h3 {
     @apply font-bold leading-3;
