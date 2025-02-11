@@ -15,7 +15,7 @@ const infoData = [
   },
   {
     icon: <PhoneCall />,
-    text: "+40724411148",
+    text: "+40.724.411.148",
   },
   {
     icon: <MailIcon />,
